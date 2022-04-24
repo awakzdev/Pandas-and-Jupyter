@@ -55,7 +55,6 @@ def read_file():
 
     # Look for Excel
     try:
-
         for list in files:
             if list.endswith('xlsx'):
                 file_name = list
