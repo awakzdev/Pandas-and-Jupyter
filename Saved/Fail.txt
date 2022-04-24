@@ -1,0 +1,6 @@
+     ch0s0-idc s/n ch0s1-idc s/n ch1s0-idc s/n ch1s1-idc s/n Tested                                         Unique Key                                 mem_info_part_number=[Unique Key] Step  Priority Score
+3112         Empty         Empty      M16G625U      M16G625U   Fail                    0011_16ATF2G64AZ-3G2E1-DDR4_S03                       mem_info=0011_MTA16ATF2G64AZ-3G2E1-DDR4_S03   C2           21100
+3116      M16G625U      M16G625U         Empty         Empty   Fail                    1100_16ATF2G64AZ-3G2E1-DDR4_S03                       mem_info=1100_MTA16ATF2G64AZ-3G2E1-DDR4_S03   C2           20850
+3124      M08G626U         Empty      M16G631U         Empty   Fail    1010_8ATF1G64AZ-3G2E1_8ATF2G64AZ-3G2B1-DDR4_S03    mem_info=1010_MTA8ATF1G64AZ-3G2E1_MTA8ATF2G64AZ-3G2B1-DDR4_S03   C2           20600
+3126      M16G625U      M16G625U      M32G053U         Empty   Fail  1110_16ATF2G64AZ-3G2E1_16ATF4G64AZ-3G2B1-DDR4_S03  mem_info=1110_MTA16ATF2G64AZ-3G2E1_MTA16ATF4G64AZ-3G2B1-DDR4_S03   C2           20600
+3128      M16G625U         Empty      M32G053U      M32G053U   Fail  1011_16ATF2G64AZ-3G2E1_16ATF4G64AZ-3G2B1-DDR4_S03  mem_info=1011_MTA16ATF2G64AZ-3G2E1_MTA16ATF4G64AZ-3G2B1-DDR4_S03   C2           20600
