@@ -69,14 +69,13 @@ def read_file():
             flag = True
     if not flag:
         logger.info(f"File was not found - {today}")
-        print("Excel missing")
         quit()
 
     # Verify if file downloaded is from today (date included in file name)
     if reversed_date in file_name:
-        print(f"File Date Matches - {reversed_date}")
+        logger.info(f"File Date Matches - {reversed_date}")
     else:
-        print(f"File is not from today \n{file_name}\n{reversed_date}\n")
+        logger.info(f"File is not from today \n{file_name}\n{reversed_date}\n")
 
     # Look for sheet names
     file = file_name
@@ -97,13 +96,11 @@ def read_file():
     try:
         x = int(input("Select Sheet Number: "))
         assert x in range(1, counter + 1), "Select a value from list"
-    except ValueError as err:
-        logger.error(err)
-        raise
+        logger.info(f"Wrong number selected {x} out of {counter + 1}"}
     else:
         df = pd.read_excel(f"{file}", f"{sheets[x]}")
     finally:
-        print(f"{sheets[x]} Selected")
+        logger.info(f"{sheets[x]} Selected")
 
     # Compare and keep matching columns
     a = df.columns
