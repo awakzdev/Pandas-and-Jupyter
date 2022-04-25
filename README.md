@@ -4,6 +4,8 @@
  
  Analysis.py will work only in a specific environment while example.py is more general.
  
+ Added automation.py to automate workflow
+ 
 # Requirements :
 `pip install jupyter
 pip install pandas`
