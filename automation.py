@@ -44,14 +44,13 @@ def project(adl):
             flag = True
     if not flag:
         logger.info(f"File was not found - {reversed_date}")
-        print("Excel missing")
         quit()
 
     # Verify if file downloaded is from today (date included in file name)
     if reversed_date in file_name:
-        print(f"File Date Matches - {reversed_date}")
+        logger.info(f"File Date Matches - {reversed_date}")
     else:
-        print(f"File is not from today \n{file_name}\n{reversed_date}\n")
+        logger.info(f"File is not from today \n{file_name}\n{reversed_date}\n")
 
     # Look for sheet names
     file = file_name
