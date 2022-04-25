@@ -1,11 +1,11 @@
 from datetime import date
+from pathlib import Path
 import pandas as pd
 import logging
 import time
 import os
 
 # Was written by Ellie, Chodjayev - for problems please contact.
-
 
 # Create logger
 logging.basicConfig(filename="problems.log",
@@ -54,14 +54,15 @@ def read_file():
     files = os.listdir()
 
     # Look for Excel
-    try:
-        for list in files:
-            if list.endswith('xlsx'):
-                file_name = list
-    except UnboundLocalError as err:
-        logger.error(err)
-    finally:
-        pass
+    flag = False
+    for list in files:
+        if list.endswith('xlsx'):
+            file_name = list
+            flag = True
+    if not flag:
+        logger.info(f"File was not found - {today}")
+        print("Excel missing")
+        quit()
 
     # Verify if file downloaded is from today (date included in file name)
     if reversed_date in file_name:
@@ -84,7 +85,7 @@ def read_file():
             sheets.append(sheet)
             print(f"{sheets[counter]} - {counter}")
 
-    # Sheet selection 
+    # Sheet selection
     try:
         x = int(input("Select Sheet Number: "))
         assert x in range(1, counter + 1), "Select a value from list"
@@ -108,15 +109,24 @@ def read_file():
     pd.set_option('display.max_columns', None)
     pd.set_option('display.width', None)
     pd.set_option('display.max_colwidth', None)
-    Pending = df[df['Tested'] == 'Pending'].sort_values(['Priority Score'], ascending=False)[keep_columns]
-    Fail = df[df['Tested'] == 'Fail'].sort_values(['Priority Score'], ascending=False)[keep_columns]
-    print(f"\n{Pending.head(10)}")
-    os.chdir(f"{original_dir}/Saved")
-    with open('Pending.txt', "w+") as f:
-        print(Pending.head(10), file=f)
+    pending = df[df['Tested'] == 'Pending'].sort_values(['Priority Score'], ascending=False)[keep_columns]
+    fail = df[df['Tested'] == 'Fail'].sort_values(['Priority Score'], ascending=False)[keep_columns]
+    print(f"\n{pending.head(10)}")
 
-    with open('Fail.txt', "w+") as f:
-        print(Fail.head(5), file=f)
+    # Save output in a newly created folder
+    selected_project = redirect
+    my_file = Path(f"{original_dir}/Saved/{selected_project}-{reversed_date}")
+    try:
+        if my_file.is_dir():
+            pass
+        else:
+            os.mkdir(f"{original_dir}/Saved/{selected_project}-{reversed_date}")
+    finally:
+        os.chdir(f"{original_dir}/Saved/{selected_project}-{reversed_date}")
+        with open(f'{sheets[x]}-Pending.txt', "w+") as f:
+            print(pending.head(10), file=f)
+        with open(f'{sheets[x]}-Fail.txt', "w+") as f:
+            print(fail.head(5), file=f)
 
     # Save logged info and time it took for this script to run
     stop_time = time.time()
