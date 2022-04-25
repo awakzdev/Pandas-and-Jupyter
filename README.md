@@ -4,7 +4,7 @@
  
  Analysis.py will work only in a specific environment while example.py is more general.
  
- Added main.py for automation.
+ Added automation.py as automation.
  
 # Requirements :
 `pip install jupyter
