@@ -3,13 +3,18 @@ from pathlib import Path
 import pandas as pd
 import logging
 import time
+import sys
 import os
 
 # Was written by Ellie, Chodjayev - for problems please contact.
 
 # Create logger
-logging.basicConfig(filename="problems.log",
-                    level=logging.DEBUG)
+logging.basicConfig(level=logging.DEBUG,
+                    format="%(asctime)s [%(levelname)s] %(message)s",
+                    handlers=[
+                        logging.FileHandler(filename="debug.log"),
+                        logging.StreamHandler(sys.stdout)
+                    ])
 logger = logging.getLogger()
 
 
@@ -56,6 +61,9 @@ def read_file():
     # Look for Excel
     flag = False
     for list in files:
+        if '~$' in list:
+            logger.info(f'detected temp excel copy : {list} , continue')
+            continue
         if list.endswith('xlsx'):
             file_name = list
             flag = True

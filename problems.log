@@ -110,3 +110,42 @@ INFO:root:Time required for TestsPopulation_04-25-2022-08-12-07.xlsx = 7.3696632
 INFO:root:Time required for TestsPopulation_04-25-2022-08-12-07.xlsx = 6.4234538078308105
 INFO:root:Time required for TestsPopulation_04-25-2022-08-12-07.xlsx = 6.238110065460205
 INFO:root:Time required for TestsPopulation_04-25-2022-08-33-58.xlsx = 7.181442022323608
+INFO:root:Time required for TestsPopulation_04-25-2022-08-33-58.xlsx = 10.96611213684082
+INFO:root:Time required for TestsPopulation_04-25-2022-08-12-07.xlsx = 9.899713516235352
+INFO:root:Time required for TestsPopulation_04-25-2022-08-33-58.xlsx = 11.646040916442871
+INFO:root:Time required for TestsPopulation_04-25-2022-08-12-07.xlsx = 11.030692338943481
+INFO:root:Time required for TestsPopulation_04-25-2022-08-33-58.xlsx = 11.062212228775024
+INFO:root:Time required for TestsPopulation_04-25-2022-08-12-07.xlsx = 7.234798431396484
+INFO:root:Time required for TestsPopulation_04-25-2022-08-33-58.xlsx = 10.7854905128479
+INFO:root:Time required for TestsPopulation_04-25-2022-08-12-07.xlsx = 8.290787696838379
+INFO:root:Time required for TestsPopulation_04-25-2022-08-33-58.xlsx = 12.701128721237183
+INFO:root:Time required for TestsPopulation_04-25-2022-08-12-07.xlsx = 14.956571102142334
+INFO:root:Time required for TestsPopulation_04-25-2022-08-33-58.xlsx = 13.670213222503662
+INFO:root:Time required for TestsPopulation_04-25-2022-08-12-07.xlsx = 15.59814167022705
+INFO:root:Time required for TestsPopulation_04-25-2022-08-12-07.xlsx = 15.643207788467407
+INFO:root:Time required for TestsPopulation_04-25-2022-08-12-07.xlsx = 16.880870819091797
+INFO:root:Time required for TestsPopulation_04-25-2022-08-12-07.xlsx = 7.5003745555877686
+INFO:root:Time required for TestsPopulation_04-25-2022-08-12-07.xlsx = 17.085440158843994
+INFO:root:Time required for TestsPopulation_04-25-2022-08-12-07.xlsx = 10.020201206207275
+INFO:root:Time required for TestsPopulation_04-25-2022-08-12-07.xlsx = 11.242494821548462
+INFO:root:Time required for TestsPopulation_04-25-2022-08-12-07.xlsx = 11.862507343292236
+INFO:root:Time required for TestsPopulation_04-25-2022-08-12-07.xlsx = 11.557497501373291
+INFO:root:Time required for TestsPopulation_04-25-2022-08-12-07.xlsx = 12.1416015625
+INFO:root:Time required for TestsPopulation_04-25-2022-08-12-07.xlsx = 10.65870714187622
+INFO:root:Time required for TestsPopulation_04-25-2022-08-12-07.xlsx = 9.741133689880371
+INFO:root:current files in folder are : ['ConfigFile_04-25-2022-08-12-07.cfg', 'Fail.txt', 'Pending.txt', 'TestsPopulation_04-25-2022-08-12-07.xlsx']
+INFO:root:Time required for TestsPopulation_04-25-2022-08-12-07.xlsx = 30.901240825653076
+INFO:root:current files in folder are : ['ConfigFile_04-25-2022-08-28-46.cfg', 'Fail.txt', 'Pending.txt', 'TestsPopulation_04-25-2022-08-28-46.xlsx', '~$TestsPopulation_04-25-2022-08-28-46.xlsx']
+INFO:root:detected temp excel copy : ~$TestsPopulation_04-25-2022-08-28-46.xlsx , continue
+INFO:root:Time required for TestsPopulation_04-25-2022-08-28-46.xlsx = 5.45134425163269
+INFO:root:current files in folder are : ['ConfigFile_04-25-2022-08-33-58.cfg', 'Fail.txt', 'Pending.txt', 'TestsPopulation_04-25-2022-08-33-58.xlsx']
+INFO:root:Time required for TestsPopulation_04-25-2022-08-33-58.xlsx = 22.999138355255127
+INFO:root:current files in folder are : ['ConfigFile_04-25-2022-08-12-07.cfg', 'Fail.txt', 'Pending.txt', 'TestsPopulation_04-25-2022-08-12-07.xlsx']
+INFO:root:current files in folder are : ['ConfigFile_04-25-2022-08-12-07.cfg', 'Fail.txt', 'Pending.txt', 'TestsPopulation_04-25-2022-08-12-07.xlsx']
+INFO:root:current files in folder are : ['ConfigFile_04-25-2022-08-12-07.cfg', 'Fail.txt', 'Pending.txt', 'TestsPopulation_04-25-2022-08-12-07.xlsx']
+INFO:root:Time required for TestsPopulation_04-25-2022-08-12-07.xlsx = 11.996462106704712
+INFO:root:current files in folder are : ['ConfigFile_04-25-2022-08-28-46.cfg', 'TestsPopulation_04-25-2022-08-28-46.xlsx', '~$TestsPopulation_04-25-2022-08-28-46.xlsx']
+INFO:root:detected temp excel copy : ~$TestsPopulation_04-25-2022-08-28-46.xlsx , continue
+INFO:root:Time required for TestsPopulation_04-25-2022-08-28-46.xlsx = 2.0419559478759766
+INFO:root:current files in folder are : ['ConfigFile_04-25-2022-08-33-58.cfg', 'Fail.txt', 'Pending.txt', 'TestsPopulation_04-25-2022-08-33-58.xlsx']
+INFO:root:Time required for TestsPopulation_04-25-2022-08-33-58.xlsx = 6.664919376373291

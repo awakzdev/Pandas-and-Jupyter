@@ -1,0 +1,72 @@
+2022-04-25 13:12:44,334 [INFO] write this
+2022-04-25 13:13:03,151 [INFO] write this
+2022-04-25 13:13:16,675 [INFO] write this
+2022-04-25 13:13:16,706 [INFO] current files in folder are : ['ConfigFile_04-25-2022-08-12-07.cfg', 'Fail.txt', 'Pending.txt', 'TestsPopulation_04-25-2022-08-12-07.xlsx']
+2022-04-25 13:13:26,500 [INFO] Time required for TestsPopulation_04-25-2022-08-12-07.xlsx = 9.824870109558105
+2022-04-25 13:13:26,514 [INFO] current files in folder are : ['ConfigFile_04-25-2022-08-28-46.cfg', 'Fail.txt', 'Pending.txt', 'TestsPopulation_04-25-2022-08-28-46.xlsx', '~$TestsPopulation_04-25-2022-08-28-46.xlsx']
+2022-04-25 13:13:26,514 [INFO] detected temp excel copy : ~$TestsPopulation_04-25-2022-08-28-46.xlsx , continue
+2022-04-25 13:13:28,475 [INFO] Time required for TestsPopulation_04-25-2022-08-28-46.xlsx = 1.9755394458770752
+2022-04-25 13:13:28,507 [INFO] current files in folder are : ['ConfigFile_04-25-2022-08-33-58.cfg', 'Fail.txt', 'Pending.txt', 'TestsPopulation_04-25-2022-08-33-58.xlsx']
+2022-04-25 13:13:34,871 [INFO] Time required for TestsPopulation_04-25-2022-08-33-58.xlsx = 6.3958985805511475
+2022-04-25 13:21:43,656 [INFO] Time required for TestsPopulation_04-25-2022-08-33-58.xlsx = 9.875625371932983
+2022-04-25 13:39:35,601 [INFO] current files in folder are : ['ConfigFile_04-25-2022-08-12-07.cfg', 'Fail.txt', 'Pending.txt', 'TestsPopulation_04-25-2022-08-12-07.xlsx']
+2022-04-25 13:39:49,323 [INFO] Time required for TestsPopulation_04-25-2022-08-12-07.xlsx = 13.734423875808716
+2022-04-25 13:39:49,347 [INFO] current files in folder are : ['ConfigFile_04-25-2022-08-28-46.cfg', 'Fail.txt', 'Pending.txt', 'TestsPopulation_04-25-2022-08-28-46.xlsx', '~$TestsPopulation_04-25-2022-08-28-46.xlsx']
+2022-04-25 13:39:49,347 [INFO] detected temp excel copy : ~$TestsPopulation_04-25-2022-08-28-46.xlsx , continue
+2022-04-25 13:39:52,282 [INFO] Time required for TestsPopulation_04-25-2022-08-28-46.xlsx = 2.9576919078826904
+2022-04-25 13:39:52,307 [INFO] current files in folder are : ['ConfigFile_04-25-2022-08-33-58.cfg', 'Fail.txt', 'Pending.txt', 'TestsPopulation_04-25-2022-08-33-58.xlsx']
+2022-04-25 13:40:00,998 [INFO] Time required for TestsPopulation_04-25-2022-08-33-58.xlsx = 8.715598344802856
+2022-04-25 13:43:50,904 [INFO] current files in folder are : ['ConfigFile_04-25-2022-08-12-07.cfg', 'Fail.txt', 'Pending.txt', 'TestsPopulation_04-25-2022-08-12-07.xlsx']
+2022-04-25 13:44:32,996 [INFO] current files in folder are : ['ConfigFile_04-25-2022-08-12-07.cfg', 'Fail.txt', 'Pending.txt', 'TestsPopulation_04-25-2022-08-12-07.xlsx']
+2022-04-25 13:44:42,622 [INFO] Time required for TestsPopulation_04-25-2022-08-12-07.xlsx = 9.637290000915527
+2022-04-25 13:44:42,652 [INFO] current files in folder are : ['ConfigFile_04-25-2022-08-28-46.cfg', 'Fail.txt', 'Pending.txt', 'TestsPopulation_04-25-2022-08-28-46.xlsx', '~$TestsPopulation_04-25-2022-08-28-46.xlsx']
+2022-04-25 13:44:42,652 [INFO] detected temp excel copy : ~$TestsPopulation_04-25-2022-08-28-46.xlsx , continue
+2022-04-25 13:46:55,147 [INFO] current files in folder are : ['ConfigFile_04-25-2022-08-12-07.cfg', 'Fail.txt', 'Pending.txt', 'TestsPopulation_04-25-2022-08-12-07.xlsx']
+2022-04-25 13:47:05,947 [INFO] Time required for TestsPopulation_04-25-2022-08-12-07.xlsx = 10.822209119796753
+2022-04-25 13:47:05,952 [INFO] current files in folder are : ['ConfigFile_04-25-2022-08-28-46.cfg', 'Fail.txt', 'Pending.txt', 'TestsPopulation_04-25-2022-08-28-46.xlsx', '~$TestsPopulation_04-25-2022-08-28-46.xlsx']
+2022-04-25 13:47:05,952 [INFO] detected temp excel copy : ~$TestsPopulation_04-25-2022-08-28-46.xlsx , continue
+2022-04-25 13:48:19,997 [INFO] current files in folder are : ['ConfigFile_04-25-2022-08-12-07.cfg', 'Fail.txt', 'Pending.txt', 'TestsPopulation_04-25-2022-08-12-07.xlsx']
+2022-04-25 13:50:00,748 [INFO] Time required for TestsPopulation_04-25-2022-08-12-07.xlsx = 98.93970441818237
+2022-04-25 13:50:01,522 [INFO] current files in folder are : ['ConfigFile_04-25-2022-08-28-46.cfg', 'Fail.txt', 'Pending.txt', 'TestsPopulation_04-25-2022-08-28-46.xlsx', '~$TestsPopulation_04-25-2022-08-28-46.xlsx']
+2022-04-25 13:50:01,522 [INFO] detected temp excel copy : ~$TestsPopulation_04-25-2022-08-28-46.xlsx , continue
+2022-04-25 13:51:04,158 [INFO] current files in folder are : ['ConfigFile_04-25-2022-08-12-07.cfg', 'Fail.txt', 'Pending.txt', 'TestsPopulation_04-25-2022-08-12-07.xlsx']
+2022-04-25 13:52:31,926 [INFO] Time required for TestsPopulation_04-25-2022-08-12-07.xlsx = 86.58724665641785
+2022-04-25 13:52:33,288 [INFO] current files in folder are : ['ConfigFile_04-25-2022-08-28-46.cfg', 'Fail.txt', 'Pending.txt', 'TestsPopulation_04-25-2022-08-28-46.xlsx', '~$TestsPopulation_04-25-2022-08-28-46.xlsx']
+2022-04-25 13:52:33,288 [INFO] detected temp excel copy : ~$TestsPopulation_04-25-2022-08-28-46.xlsx , continue
+2022-04-25 14:12:58,450 [INFO] current files in folder are : ['ConfigFile_04-25-2022-08-12-07.cfg', 'Fail.txt', 'Pending.txt', 'TestsPopulation_04-25-2022-08-12-07.xlsx']
+2022-04-25 14:13:08,412 [INFO] Time required for TestsPopulation_04-25-2022-08-12-07.xlsx = 9.997865676879883
+2022-04-25 14:13:08,437 [INFO] current files in folder are : ['ConfigFile_04-25-2022-08-28-46.cfg', 'Fail.txt', 'Pending.txt', 'TestsPopulation_04-25-2022-08-28-46.xlsx', '~$TestsPopulation_04-25-2022-08-28-46.xlsx']
+2022-04-25 14:13:08,438 [INFO] detected temp excel copy : ~$TestsPopulation_04-25-2022-08-28-46.xlsx , continue
+2022-04-25 14:13:10,289 [INFO] Time required for TestsPopulation_04-25-2022-08-28-46.xlsx = 1.8765614032745361
+2022-04-25 14:13:10,308 [INFO] current files in folder are : ['ConfigFile_04-25-2022-08-33-58.cfg', 'Fail.txt', 'Pending.txt', 'TestsPopulation_04-25-2022-08-33-58.xlsx']
+2022-04-25 14:13:16,570 [INFO] Time required for TestsPopulation_04-25-2022-08-33-58.xlsx = 6.280931711196899
+2022-04-25 14:18:42,671 [INFO] current files in folder are : ['ConfigFile_04-25-2022-08-12-07.cfg', 'Fail.txt', 'Pending.txt', 'TestsPopulation_04-25-2022-08-12-07.xlsx']
+2022-04-25 14:19:07,399 [INFO] current files in folder are : ['ConfigFile_04-25-2022-08-12-07.cfg', 'Fail.txt', 'Pending.txt', 'TestsPopulation_04-25-2022-08-12-07.xlsx']
+2022-04-25 14:19:35,745 [INFO] current files in folder are : ['ConfigFile_04-25-2022-08-12-07.cfg', 'Fail.txt', 'Pending.txt', 'TestsPopulation_04-25-2022-08-12-07.xlsx']
+2022-04-25 14:19:45,962 [INFO] Time required for TestsPopulation_04-25-2022-08-12-07.xlsx = 10.235128164291382
+2022-04-25 14:19:45,976 [INFO] current files in folder are : ['ConfigFile_04-25-2022-08-28-46.cfg', 'Fail.txt', 'Pending.txt', 'TestsPopulation_04-25-2022-08-28-46.xlsx', '~$TestsPopulation_04-25-2022-08-28-46.xlsx']
+2022-04-25 14:19:45,976 [INFO] detected temp excel copy : ~$TestsPopulation_04-25-2022-08-28-46.xlsx , continue
+2022-04-25 14:19:47,890 [INFO] Time required for TestsPopulation_04-25-2022-08-28-46.xlsx = 1.9276814460754395
+2022-04-25 14:19:47,906 [INFO] current files in folder are : ['ConfigFile_04-25-2022-08-33-58.cfg', 'Fail.txt', 'Pending.txt', 'TestsPopulation_04-25-2022-08-33-58.xlsx']
+2022-04-25 14:19:55,919 [INFO] Time required for TestsPopulation_04-25-2022-08-33-58.xlsx = 8.028295278549194
+2022-04-25 14:21:23,468 [INFO] current files in folder are : ['ConfigFile_04-25-2022-08-12-07.cfg', 'Fail.txt', 'Pending.txt', 'TestsPopulation_04-25-2022-08-12-07.xlsx']
+2022-04-25 14:21:34,426 [INFO] Time required for TestsPopulation_04-25-2022-08-12-07.xlsx = 10.974069356918335
+2022-04-25 14:21:34,438 [INFO] current files in folder are : ['ConfigFile_04-25-2022-08-28-46.cfg', 'Fail.txt', 'Pending.txt', 'TestsPopulation_04-25-2022-08-28-46.xlsx', '~$TestsPopulation_04-25-2022-08-28-46.xlsx']
+2022-04-25 14:21:34,439 [INFO] detected temp excel copy : ~$TestsPopulation_04-25-2022-08-28-46.xlsx , continue
+2022-04-25 14:21:36,486 [INFO] Time required for TestsPopulation_04-25-2022-08-28-46.xlsx = 2.059412956237793
+2022-04-25 14:21:36,515 [INFO] current files in folder are : ['ConfigFile_04-25-2022-08-33-58.cfg', 'Fail.txt', 'Pending.txt', 'TestsPopulation_04-25-2022-08-33-58.xlsx']
+2022-04-25 14:21:47,638 [INFO] Time required for TestsPopulation_04-25-2022-08-33-58.xlsx = 11.152201175689697
+2022-04-25 14:22:57,185 [INFO] current files in folder are : ['ConfigFile_04-25-2022-08-12-07.cfg', 'Fail.txt', 'Pending.txt', 'TestsPopulation_04-25-2022-08-12-07.xlsx']
+2022-04-25 14:23:08,919 [INFO] Time required for TestsPopulation_04-25-2022-08-12-07.xlsx = 11.752442121505737
+2022-04-25 14:23:08,930 [INFO] current files in folder are : ['ConfigFile_04-25-2022-08-28-46.cfg', 'Fail.txt', 'Pending.txt', 'TestsPopulation_04-25-2022-08-28-46.xlsx', '~$TestsPopulation_04-25-2022-08-28-46.xlsx']
+2022-04-25 14:23:08,930 [INFO] detected temp excel copy : ~$TestsPopulation_04-25-2022-08-28-46.xlsx , continue
+2022-04-25 14:23:11,113 [INFO] Time required for TestsPopulation_04-25-2022-08-28-46.xlsx = 2.193875551223755
+2022-04-25 14:23:11,134 [INFO] current files in folder are : ['ConfigFile_04-25-2022-08-33-58.cfg', 'Fail.txt', 'Pending.txt', 'TestsPopulation_04-25-2022-08-33-58.xlsx']
+2022-04-25 14:23:19,714 [INFO] Time required for TestsPopulation_04-25-2022-08-33-58.xlsx = 8.600643634796143
+2022-04-25 14:23:57,257 [INFO] current files in folder are : ['ConfigFile_04-25-2022-08-12-07.cfg', 'Fail.txt', 'Pending.txt', 'TestsPopulation_04-25-2022-08-12-07.xlsx']
+2022-04-25 14:24:11,256 [INFO] Time required for TestsPopulation_04-25-2022-08-12-07.xlsx = 14.00037932395935
+2022-04-25 14:24:11,267 [INFO] current files in folder are : ['ConfigFile_04-25-2022-08-28-46.cfg', 'Fail.txt', 'Pending.txt', 'TestsPopulation_04-25-2022-08-28-46.xlsx', '~$TestsPopulation_04-25-2022-08-28-46.xlsx']
+2022-04-25 14:24:11,267 [INFO] detected temp excel copy : ~$TestsPopulation_04-25-2022-08-28-46.xlsx , continue
+2022-04-25 14:24:13,833 [INFO] Time required for TestsPopulation_04-25-2022-08-28-46.xlsx = 2.576822280883789
+2022-04-25 14:24:13,844 [INFO] current files in folder are : ['ConfigFile_04-25-2022-08-33-58.cfg', 'Fail.txt', 'Pending.txt', 'TestsPopulation_04-25-2022-08-33-58.xlsx']
+2022-04-25 14:24:24,909 [INFO] Time required for TestsPopulation_04-25-2022-08-33-58.xlsx = 11.075429439544678
