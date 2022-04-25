@@ -67,7 +67,7 @@ def project(adl):
             sheets.append(sheet)
             print(f"{sheets[counter]} - {counter}")
 
-    # Sheet selection
+    # Loop over sheets
     dir = os.getcwd()
     counter = 0
     try:
@@ -112,7 +112,7 @@ def project(adl):
         os.chdir(project_path)
         print(os.getcwd())
 
-    # Save logged info and time it took for this script to run
+    # Save logged info and time it took to run
     stop_time = time.time()
     dt = stop_time - start_time
     logger.info("Time required for {file} = {time}".format(file=file,
