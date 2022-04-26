@@ -49,8 +49,10 @@ def project(adl):
     # Verify if file downloaded is from today (date included in file name)
     if reversed_date in file_name:
         logger.info(f"File Date Matches - {reversed_date}")
+        date_match = True
     else:
         logger.info(f"File is not from today \n{file_name}\n{reversed_date}\n")
+        date_match = False
 
     # Look for sheet names
     file = file_name
@@ -68,7 +70,7 @@ def project(adl):
             print(f"{sheets[counter]} - {counter}")
 
     # Loop over sheets
-    dir = os.getcwd()
+    directory = os.getcwd()
     counter = 0
     try:
         for i in sheets:
@@ -93,24 +95,25 @@ def project(adl):
                     pending = df[df['Tested'] == 'Pending'].sort_values(['Priority Score'], ascending=False)[keep_columns]
                     fail = df[df['Tested'] == 'Fail'].sort_values(['Priority Score'], ascending=False)[keep_columns]
                     print(f"\n{pending.head(10)}")
-                    my_file = Path(f"{original_dir}/Saved/{adl}-{reversed_date}")
+                    my_file = Path(f"{original_dir}/Saved/{today}-{adl}")
                     try:
                         if my_file.is_dir():
                             pass
                         else:
-                            os.mkdir(f"{original_dir}/Saved/{adl}-{reversed_date}")
+                            os.mkdir(f"{original_dir}/Saved/{today}-{adl}")
                     finally:
-                        os.chdir(f"{original_dir}/Saved/{adl}-{reversed_date}")
+                        os.chdir(f"{original_dir}/Saved/{today}-{adl}")
+                    with open(f"{date_match}", "a+") as f:
+                        f.write("Will check if date and file-date match")
                     with open('Pending.txt', "a+") as f:
                         f.write(f"\n{sheets[counter]}\n")
                         print(pending.head(10), file=f)
                     with open('Fail.txt', "a+") as f:
                         f.write(f"\n{sheets[counter]}\n")
                         print(fail.head(5), file=f)
-                    os.chdir(dir)
+                    os.chdir(directory)
     finally:
         os.chdir(project_path)
-        print(os.getcwd())
 
     # Save logged info and time it took to run
     stop_time = time.time()
