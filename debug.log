@@ -70,3 +70,62 @@
 2022-04-25 14:24:13,833 [INFO] Time required for TestsPopulation_04-25-2022-08-28-46.xlsx = 2.576822280883789
 2022-04-25 14:24:13,844 [INFO] current files in folder are : ['ConfigFile_04-25-2022-08-33-58.cfg', 'Fail.txt', 'Pending.txt', 'TestsPopulation_04-25-2022-08-33-58.xlsx']
 2022-04-25 14:24:24,909 [INFO] Time required for TestsPopulation_04-25-2022-08-33-58.xlsx = 11.075429439544678
+2022-04-27 07:57:35,088 [INFO] current files in folder are : ['ConfigFile_04-26-2022-14-37-48.cfg', 'TestsPopulation_04-26-2022-14-37-48.xlsx']
+2022-04-27 07:57:35,089 [INFO] File is not from today 
+TestsPopulation_04-26-2022-14-37-48.xlsx
+04-27-2022
+
+2022-04-27 07:57:40,792 [INFO] Time required for TestsPopulation_04-26-2022-14-37-48.xlsx = 5.716903209686279
+2022-04-27 07:57:40,813 [INFO] current files in folder are : ['ConfigFile_04-26-2022-14-54-20.cfg', 'TestsPopulation_04-26-2022-14-54-20.xlsx']
+2022-04-27 07:57:40,814 [INFO] File is not from today 
+TestsPopulation_04-26-2022-14-54-20.xlsx
+04-27-2022
+
+2022-04-27 07:57:41,924 [INFO] Time required for TestsPopulation_04-26-2022-14-54-20.xlsx = 1.1311960220336914
+2022-04-27 07:57:41,946 [INFO] current files in folder are : ['ConfigFile_04-26-2022-14-59-19.cfg', 'TestsPopulation_04-26-2022-14-59-19.xlsx']
+2022-04-27 07:57:41,947 [INFO] File is not from today 
+TestsPopulation_04-26-2022-14-59-19.xlsx
+04-27-2022
+
+2022-04-27 07:57:45,350 [INFO] Time required for TestsPopulation_04-26-2022-14-59-19.xlsx = 3.423757314682007
+2022-04-27 07:59:04,582 [INFO] current files in folder are : ['ConfigFile_04-26-2022-14-37-48.cfg', 'TestsPopulation_04-26-2022-14-37-48.xlsx']
+2022-04-27 07:59:04,582 [INFO] File is not from today 
+TestsPopulation_04-26-2022-14-37-48.xlsx
+04-27-2022
+
+2022-04-27 07:59:12,567 [INFO] Time required for TestsPopulation_04-26-2022-14-37-48.xlsx = 7.986729145050049
+2022-04-27 07:59:12,570 [INFO] current files in folder are : ['ConfigFile_04-26-2022-14-54-20.cfg', 'TestsPopulation_04-26-2022-14-54-20.xlsx']
+2022-04-27 07:59:12,570 [INFO] File is not from today 
+TestsPopulation_04-26-2022-14-54-20.xlsx
+04-27-2022
+
+2022-04-27 07:59:14,141 [INFO] Time required for TestsPopulation_04-26-2022-14-54-20.xlsx = 1.5720727443695068
+2022-04-27 07:59:14,148 [INFO] current files in folder are : ['ConfigFile_04-26-2022-14-59-19.cfg', 'TestsPopulation_04-26-2022-14-59-19.xlsx']
+2022-04-27 07:59:14,148 [INFO] File is not from today 
+TestsPopulation_04-26-2022-14-59-19.xlsx
+04-27-2022
+
+2022-04-27 07:59:19,662 [INFO] Time required for TestsPopulation_04-26-2022-14-59-19.xlsx = 5.5207438468933105
+2022-04-27 08:11:09,301 [INFO] current files in folder are : ['ConfigFile_04-26-2022-14-37-48.cfg', 'TestsPopulation_04-26-2022-14-37-48.xlsx']
+2022-04-27 08:11:09,302 [INFO] File is not from today 
+TestsPopulation_04-26-2022-14-37-48.xlsx
+04-27-2022
+
+2022-04-27 08:48:40,178 [INFO] current files in folder are : ['ConfigFile_04-27-2022-08-00-24.cfg', 'TestsPopulation_04-27-2022-08-00-24.xlsx']
+2022-04-27 08:48:40,179 [INFO] File Date Matches - 04-27-2022
+2022-04-27 08:48:45,636 [INFO] Time required for TestsPopulation_04-27-2022-08-00-24.xlsx = 5.488102912902832
+2022-04-27 08:48:45,658 [INFO] current files in folder are : ['ConfigFile_04-27-2022-08-16-06.cfg', 'TestsPopulation_04-27-2022-08-16-06.xlsx']
+2022-04-27 08:48:45,659 [INFO] File Date Matches - 04-27-2022
+2022-04-27 08:48:46,875 [INFO] Time required for TestsPopulation_04-27-2022-08-16-06.xlsx = 1.2374396324157715
+2022-04-27 08:48:46,893 [INFO] current files in folder are : ['ConfigFile_04-27-2022-08-20-58.cfg', 'TestsPopulation_04-27-2022-08-20-58.xlsx']
+2022-04-27 08:48:46,893 [INFO] File Date Matches - 04-27-2022
+2022-04-27 08:48:50,128 [INFO] Time required for TestsPopulation_04-27-2022-08-20-58.xlsx = 3.2533249855041504
+2022-04-27 08:54:59,879 [INFO] current files in folder are : ['ConfigFile_04-27-2022-08-00-24.cfg', 'TestsPopulation_04-27-2022-08-00-24.xlsx']
+2022-04-27 08:54:59,881 [INFO] File Date Matches - 04-27-2022
+2022-04-27 08:55:06,979 [INFO] Time required for TestsPopulation_04-27-2022-08-00-24.xlsx = 7.119728326797485
+2022-04-27 08:55:07,001 [INFO] current files in folder are : ['ConfigFile_04-27-2022-08-16-06.cfg', 'TestsPopulation_04-27-2022-08-16-06.xlsx']
+2022-04-27 08:55:07,006 [INFO] File Date Matches - 04-27-2022
+2022-04-27 08:55:08,390 [INFO] Time required for TestsPopulation_04-27-2022-08-16-06.xlsx = 1.409790277481079
+2022-04-27 08:55:08,409 [INFO] current files in folder are : ['ConfigFile_04-27-2022-08-20-58.cfg', 'TestsPopulation_04-27-2022-08-20-58.xlsx']
+2022-04-27 08:55:08,410 [INFO] File Date Matches - 04-27-2022
+2022-04-27 08:55:13,203 [INFO] Time required for TestsPopulation_04-27-2022-08-20-58.xlsx = 4.813074111938477
