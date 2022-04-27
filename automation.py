@@ -35,13 +35,11 @@ def project(adl):
 
     # Create a folder for later use
     new_folder = Path(f"{original_dir}/Saved/{today}/")
-    try:
-        if new_folder.is_dir():
-            pass
-        else:
-            os.mkdir(f"{original_dir}/Saved/{today}/")
-    finally:
+    if new_folder.is_dir():
         pass
+    else:
+        os.mkdir(f"{original_dir}/Saved/{today}/")
+
 
     # Look for Excel
     flag = False
@@ -114,7 +112,7 @@ def project(adl):
                     finally:
                         os.chdir(f"{original_dir}/Saved/{today}/{adl}")
                     with open(f"{date_match}", "a+") as f:
-                        f.write("Will check if date and file-date match")
+                        f.write("Will return True or False > Does date match?")
                     with open('Pending.txt', "a+") as f:
                         f.write(f"\n{sheets[counter]}\n")
                         print(pending.head(10), file=f)
