@@ -7,8 +7,7 @@
  Added automation.py as automation.
  
 # Requirements :
-`pip install jupyter
-pip install pandas`
+`pip install jupyter pandas`
 
 # Open Jupyter
 `python -m notebook`
