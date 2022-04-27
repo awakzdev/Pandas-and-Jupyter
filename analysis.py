@@ -51,13 +51,12 @@ def read_file():
             if redirect == "ADL-P":
                 new_redirect = "OutputFiles-ADL-P-PRQ"
 
-    # Enter full project path
+    # Enter full project path 
     original_dir = os.getcwd()
     os.chdir(f"{project_path}/{new_redirect}")
     latest_folder = os.listdir()
     os.chdir(latest_folder[-1])
     files = os.listdir()
-    logger.info(f"Inside - {files}")
 
     # Look for Excel
     flag = False
@@ -94,10 +93,13 @@ def read_file():
             print(f"{sheets[counter]} - {counter}")
 
     # Sheet selection
-    x = int(input("Select Sheet Number: "))
-    assert x in range(1, counter + 1), "Select a value from list"
-    df = pd.read_excel(f"{file}", f"{sheets[x]}")
-    logger.info(f"{sheets[x]} Selected")
+    try: 
+        x = int(input("Select Sheet Number: "))
+        assert x in range(1, counter + 1), "Select a value from list"
+        logger.info(f"Wrong number selected {x} out of {counter +1}")
+        df = pd.read_excel(f"{file}", f"{sheets[x]}")
+    finally:
+        logger.info(f"{sheets[x]} Selected")
 
     # Compare and keep matching columns
     a = df.columns
