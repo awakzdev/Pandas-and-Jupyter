@@ -11,4 +11,5 @@
 pip install pandas`
 
 # Open Jupyter
-`Jupyter-lab`
+`Jupyter-lab
+or python -m notebook`
