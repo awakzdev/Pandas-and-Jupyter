@@ -94,13 +94,10 @@ def read_file():
             print(f"{sheets[counter]} - {counter}")
 
     # Sheet selection
-    try:
-        x = int(input("Select Sheet Number: "))
-        assert x in range(1, counter + 1), "Select a value from list"
-        logger.info(f"Wrong number selected {x} out of {counter + 1}")
-        df = pd.read_excel(f"{file}", f"{sheets[x]}")
-    finally:
-        logger.info(f"{sheets[x]} Selected")
+    x = int(input("Select Sheet Number: "))
+    assert x in range(1, counter + 1), "Select a value from list"
+    df = pd.read_excel(f"{file}", f"{sheets[x]}")
+    logger.info(f"{sheets[x]} Selected")
 
     # Compare and keep matching columns
     a = df.columns
