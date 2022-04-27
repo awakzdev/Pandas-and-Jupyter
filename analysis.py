@@ -97,8 +97,8 @@ def read_file():
         x = int(input("Select Sheet Number: "))
         assert x in range(1, counter + 1), "Select a value from list"
         logger.info(f"Wrong number selected {x} out of {counter + 1}")
-    else:
-        df = pd.read_excel(f"{file}", f"{sheets[x]}")
+        else:
+            df = pd.read_excel(f"{file}", f"{sheets[x]}")
     finally:
         logger.info(f"{sheets[x]} Selected")
 
