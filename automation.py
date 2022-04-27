@@ -33,6 +33,16 @@ def project(adl):
     files = os.listdir()
     logger.info(f'current files in folder are : {files}')
 
+    # Create a folder for later use
+    new_folder = Path(f"{original_dir}/Saved/{today}/")
+    try:
+        if new_folder.is_dir():
+            pass
+        else:
+            os.mkdir(f"{original_dir}/Saved/{today}/")
+    finally:
+        pass
+
     # Look for Excel
     flag = False
     for list in files:
@@ -95,14 +105,14 @@ def project(adl):
                     pending = df[df['Tested'] == 'Pending'].sort_values(['Priority Score'], ascending=False)[keep_columns]
                     fail = df[df['Tested'] == 'Fail'].sort_values(['Priority Score'], ascending=False)[keep_columns]
                     print(f"\n{pending.head(10)}")
-                    my_file = Path(f"{original_dir}/Saved/{today}-{adl}")
+                    my_file = Path(f"{original_dir}/Saved/{today}/{adl}")
                     try:
                         if my_file.is_dir():
                             pass
                         else:
-                            os.mkdir(f"{original_dir}/Saved/{today}-{adl}")
+                            os.mkdir(f"{original_dir}/Saved/{today}/{adl}")
                     finally:
-                        os.chdir(f"{original_dir}/Saved/{today}-{adl}")
+                        os.chdir(f"{original_dir}/Saved/{today}/{adl}")
                     with open(f"{date_match}", "a+") as f:
                         f.write("Will check if date and file-date match")
                     with open('Pending.txt', "a+") as f:
