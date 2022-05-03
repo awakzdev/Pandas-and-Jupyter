@@ -2,6 +2,7 @@ from datetime import date
 from pathlib import Path
 import pandas as pd
 import logging
+import shutil
 import time
 import sys
 import os
@@ -18,7 +19,7 @@ logging.basicConfig(level=logging.DEBUG,
 logger = logging.getLogger()
 
 
-def project(adl):
+def project(system):
     """Filter Test-Population sheet through Pending/Priority for easier workflow"""
     start_time = time.time()
     today = date.today()
@@ -27,19 +28,22 @@ def project(adl):
 
     # Enter full project path
     original_dir = "C:/Users/ehodjayx/PycharmProjects/pythonProject/Pandas-and-Jupyter"
-    os.chdir(f"{project_path}/{adl}")
+    os.chdir(f"{project_path}/{system}")
     latest_folder = os.listdir()
     os.chdir(latest_folder[-1])
+    logger.info(f'current dir {os.getcwd()}')
     files = os.listdir()
     logger.info(f'current files in folder are : {files}')
 
     # Create a folder for later use
     new_folder = Path(f"{original_dir}/Saved/{today}/")
-    if new_folder.is_dir():
+    try:
+        if new_folder.is_dir():
+            pass
+        else:
+            os.mkdir(f"{original_dir}/Saved/{today}/")
+    finally:
         pass
-    else:
-        os.mkdir(f"{original_dir}/Saved/{today}/")
-
 
     # Look for Excel
     flag = False
@@ -103,16 +107,16 @@ def project(adl):
                     pending = df[df['Tested'] == 'Pending'].sort_values(['Priority Score'], ascending=False)[keep_columns]
                     fail = df[df['Tested'] == 'Fail'].sort_values(['Priority Score'], ascending=False)[keep_columns]
                     print(f"\n{pending.head(10)}")
-                    my_file = Path(f"{original_dir}/Saved/{today}/{adl}")
+                    my_file = Path(f"{original_dir}/Saved/{today}/{system}")
                     try:
                         if my_file.is_dir():
                             pass
                         else:
-                            os.mkdir(f"{original_dir}/Saved/{today}/{adl}")
+                            os.mkdir(f"{original_dir}/Saved/{today}/{system}")
                     finally:
-                        os.chdir(f"{original_dir}/Saved/{today}/{adl}")
+                        os.chdir(f"{original_dir}/Saved/{today}/{system}")
                     with open(f"{date_match}", "a+") as f:
-                        f.write("Will return True or False > Does date match?")
+                        f.write("Will check if date and file-date match")
                     with open('Pending.txt', "a+") as f:
                         f.write(f"\n{sheets[counter]}\n")
                         print(pending.head(10), file=f)
@@ -133,3 +137,4 @@ def project(adl):
 project("OutputFiles-ADL-S-PRQ")
 project("OutputFiles-ADL-P-PRQ")
 project("OutputFiles-ADL-S-BGA")
+project("OutputFiles-RPL-P-ES2")
