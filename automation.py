@@ -1,6 +1,7 @@
 from datetime import date
 from pathlib import Path
 import pandas as pd
+import mutiprocessing
 import logging
 import shutil
 import time
@@ -83,8 +84,8 @@ def project(system):
     directory = os.getcwd()
     counter = 0
     try:
-        for i in sheets:
-            if i in sheets:
+        for _ in sheets:
+            if _ in sheets:
                 counter += 1
                 if counter == len(sheets):
                     break
@@ -125,14 +126,22 @@ def project(system):
     finally:
         os.chdir(project_path)
 
-    # Save logged info and time it took to run
-    stop_time = time.time()
-    dt = stop_time - start_time
-    logger.info("Time required for {file} = {time}".format(file=file,
-                                                           time=dt))
 
-
-project("OutputFiles-ADL-S-PRQ")
-project("OutputFiles-ADL-P-PRQ")
-project("OutputFiles-ADL-S-BGA")
-project("OutputFiles-RPL-P-ES2")
+if __name__ == "__main__":
+  p1 = multiprocessing.Process(target=project, args=("OutputFiles-ADL-S-PRQ", ))
+  p2 = multiprocessing.Process(target=project, args=("OutputFiles-ADL-P-PRQ", ))
+  p3 = multiprocessing.Process(target=project, args=("OutputFiles-ADL-S-BGA", ))
+  p4 = multiprocessing.Process(target=project, args=("OutputFiles-RPL-P-ES2", ))
+  p1.start()
+  p2.start()
+  p3.start()
+  p4.start()
+  p1.join()
+  p2.join()
+  p3.join()
+  p4.join()
+  # Save logged info and time it took to run
+  stop_time = time.time()
+  dt = stop_time - start_time
+  logger.info("Time required for {file} = {time}".format(file=file,
+                                                         time=dt))
