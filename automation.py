@@ -37,13 +37,11 @@ def project(system):
 
     # Create a folder for later use
     new_folder = Path(f"{original_dir}/Saved/{today}/")
-    try:
-        if new_folder.is_dir():
-            pass
-        else:
-            os.mkdir(f"{original_dir}/Saved/{today}/")
-    finally:
+    if new_folder.is_dir():
         pass
+    else:
+        os.mkdir(f"{original_dir}/Saved/{today}/")
+
 
     # Look for Excel
     flag = False
