@@ -1,6 +1,6 @@
 
 ## Made for MMEX
- Filtering Excel for easier workflow, Using Pandas and Jupyter.
+ Filtering MMEX (Intel Domain) TestPopulation Excel to automate daily workflow - Using Pandas and Jupyter.
 
 # Using Jupyter
 `python -m notebook`
