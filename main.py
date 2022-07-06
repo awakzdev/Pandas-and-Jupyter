@@ -1,7 +1,7 @@
+import concurrent.futures
 from datetime import date
 from pathlib import Path
 import pandas as pd
-import mutiprocessing
 import logging
 import shutil
 import time
@@ -128,18 +128,11 @@ def project(system):
 
 
 if __name__ == "__main__":
-  p1 = multiprocessing.Process(target=project, args=("OutputFiles-ADL-S-PRQ", ))
-  p2 = multiprocessing.Process(target=project, args=("OutputFiles-ADL-P-PRQ", ))
-  p3 = multiprocessing.Process(target=project, args=("OutputFiles-ADL-S-BGA", ))
-  p4 = multiprocessing.Process(target=project, args=("OutputFiles-RPL-P-ES2", ))
-  p1.start()
-  p2.start()
-  p3.start()
-  p4.start()
-  p1.join()
-  p2.join()
-  p3.join()
-  p4.join()
+  with concurrent.futures.ProcessPoolExecutor() as executor:
+    p1 = executor.sumbit(project, "OutputFiles-ADL-S-PRQ")
+    p2 = executor.sumbit(project, "OutputFiles-ADL-P-PRQ")
+    p3 = executor.sumbit(project, "OutputFiles-ADL-S-BGA")
+    p4 = executor.sumbit(project, "OutputFiles-RPL-P-ES2")
   # Save logged info and time it took to run
   stop_time = time.time()
   dt = stop_time - start_time
