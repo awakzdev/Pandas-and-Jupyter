@@ -43,7 +43,6 @@ def project(system):
     else:
         os.mkdir(f"{original_dir}/Saved/{today}/")
 
-
     # Look for Excel
     flag = False
     for list in files:
@@ -85,56 +84,55 @@ def project(system):
     counter = 0
     try:
         for _ in sheets:
-            if _ in sheets:
-                counter += 1
-                if counter == len(sheets):
-                    break
-                else:
-                    # Compare and keep matching columns
-                    df = pd.read_excel(f"{file}", f"{sheets[counter]}")
-                    a = df.columns
-                    b = ['ch0-idc s/n', 'ch1-idc s/n', 'ch0s0-idc s/n', 'ch0s1-idc s/n',
-                         'ch1s0-idc s/n', 'ch1s1-idc s/n', 'Tested',
-                         'mem_info_part_number=[Unique Key]',
-                         'Step', 'Priority Score', 'Unique Key']
-                    keep_columns = [x for x in a if x in b]
+            counter += 1
+            if counter == len(sheets):
+                break
+            else:
+                # Compare and keep matching columns
+                df = pd.read_excel(f"{file}", f"{sheets[counter]}")
+                a = df.columns
+                b = ['ch0-idc s/n', 'ch1-idc s/n', 'ch0s0-idc s/n', 'ch0s1-idc s/n',
+                     'ch1s0-idc s/n', 'ch1s1-idc s/n', 'Tested',
+                     'mem_info_part_number=[Unique Key]',
+                     'Step', 'Priority Score', 'Unique Key']
+                keep_columns = [x for x in a if x in b]
 
-                    # Filters by Pending and by Priority - will save output in a file
-                    pd.set_option('display.max_columns', None)
-                    pd.set_option('display.width', None)
-                    pd.set_option('display.max_colwidth', None)
-                    pending = df[df['Tested'] == 'Pending'].sort_values(['Priority Score'], ascending=False)[keep_columns]
-                    fail = df[df['Tested'] == 'Fail'].sort_values(['Priority Score'], ascending=False)[keep_columns]
-                    print(f"\n{pending.head(10)}")
-                    my_file = Path(f"{original_dir}/Saved/{today}/{system}")
-                    try:
-                        if my_file.is_dir():
-                            pass
-                        else:
-                            os.mkdir(f"{original_dir}/Saved/{today}/{system}")
-                    finally:
-                        os.chdir(f"{original_dir}/Saved/{today}/{system}")
-                    with open(f"{date_match}", "a+") as f:
-                        f.write("Will check if date and file-date match")
-                    with open('Pending.txt', "a+") as f:
-                        f.write(f"\n{sheets[counter]}\n")
-                        print(pending.head(10), file=f)
-                    with open('Fail.txt', "a+") as f:
-                        f.write(f"\n{sheets[counter]}\n")
-                        print(fail.head(5), file=f)
-                    os.chdir(directory)
+                # Filters by Pending and by Priority - will save output in a file
+                pd.set_option('display.max_columns', None)
+                pd.set_option('display.width', None)
+                pd.set_option('display.max_colwidth', None)
+                pending = df[df['Tested'] == 'Pending'].sort_values(['Priority Score'], ascending=False)[keep_columns]
+                fail = df[df['Tested'] == 'Fail'].sort_values(['Priority Score'], ascending=False)[keep_columns]
+                print(f"\n{pending.head(10)}")
+                my_file = Path(f"{original_dir}/Saved/{today}/{system}")
+                try:
+                    if my_file.is_dir():
+                        pass
+                    else:
+                        os.mkdir(f"{original_dir}/Saved/{today}/{system}")
+                finally:
+                    os.chdir(f"{original_dir}/Saved/{today}/{system}")
+                with open(f"{date_match}", "a+") as f:
+                    f.write("Will check if date and file-date match")
+                with open('Pending.txt', "a+") as f:
+                    f.write(f"\n{sheets[counter]}\n")
+                    print(pending.head(10), file=f)
+                with open('Fail.txt', "a+") as f:
+                    f.write(f"\n{sheets[counter]}\n")
+                    print(fail.head(5), file=f)
     finally:
         os.chdir(project_path)
 
+    # Save logged info and time it took to run
+    stop_time = time.time()
+    dt = stop_time - start_time
+    logger.info("Time required for {file} = {time}".format(file=file,
+                                                           time=dt))
+
 
 if __name__ == "__main__":
-  with concurrent.futures.ProcessPoolExecutor() as executor:
-    p1 = executor.sumbit(project, "OutputFiles-ADL-S-PRQ")
-    p2 = executor.sumbit(project, "OutputFiles-ADL-P-PRQ")
-    p3 = executor.sumbit(project, "OutputFiles-ADL-S-BGA")
-    p4 = executor.sumbit(project, "OutputFiles-RPL-P-ES2")
-  # Save logged info and time it took to run
-  stop_time = time.time()
-  dt = stop_time - start_time
-  logger.info("Time required for {file} = {time}".format(file=file,
-                                                         time=dt))
+    with concurrent.futures.ProcessPoolExecutor() as executor:
+        p1 = executor.submit(project, "OutputFiles-ADL-S-PRQ")
+        p2 = executor.submit(project, "OutputFiles-ADL-P-PRQ")
+        p3 = executor.submit(project, "OutputFiles-ADL-S-BGA")
+        p4 = executor.submit(project, "OutputFiles-RPL-P-ES2")
